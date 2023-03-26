@@ -66,13 +66,7 @@ h1{
 
     /* alinha o texto com o centro da página */
     text-align: center;
-    background-color: gray;
-
-    /* criando as propriedades da imagem de fundo */
-    background-image: url(../img/bgBanner.jpg);
-    background-position: center;
-    /* o cover tenta aproveitar a imagem ao máximo de acordo com o container */
-    background-size: cover;
+    background-color: black;
 
     /* o pading nesse caso é da seguinte forma: 320px de margem 
     para o topo e para o bottom, e 0px de margem para a esquerda e para a direita */
@@ -87,17 +81,50 @@ do cabeçalho sem afetar os outros elemntos p da página */
     color: aliceblue;
 }
 
+/* criando um pseudo-elemento para adicionar a imagem de fundo com filtro de opacidade */
+.topo::before{
+    /* basicamente, esse pseudo-elemento está fingindo ser o background */
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    /* colocando a largura da imagem como sendo a largura da página */
+    width: 100%;
+    background-image: url(../img/bgBanner.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    /* adicionando o padding para que a imagem possa ficar corretamente centralizada */
+    padding: 437px 0;
+
+    /* adicionando filtros */
+    filter: opacity(0.4);
+}
+
+/* adicionando a classe topo-inside para que possamos colocar o texto em cima da imagem de background */
+.topo-inside{
+    position: relative;
+}
+
 .botaoDefault{
     width: 200px;
     height: 50px;
-    color: rgb(94, 88, 88);
-    background-color: aliceblue;
-    border-radius: 10px;
+    color: aliceblue;
+
+    /* colocando um fundo com transparência */
+    background-color: rgba(116, 116, 116, 0.3);
+    border-radius: 20px;
     border-style: double;
+
+    /* definindo o tamanho das bordas. funciona que nem o padding, e precisa vir depois do border-style */
+    border-width: 3px 3px;
     border-color: rgb(94, 88, 88);
-    padding: 20px 10px;
+
+    padding: 15px 10px;
     /* alguns elementos não aceitam algumas propriedades, como é o caso do a com o
     margin. logo, eu adiciono um padding ao elemento p para que este se distancie
     do botao. */
+    /* além disso, o padding serve para ser o tamanho do botão */
 }
 /* #endregion */
