@@ -26,7 +26,6 @@
 /* com a tag html, eu defino a fonte de todo o site */
 html{
     font-family: 'Roboto-Light', sans-serif;
-
     /* todo o texto vai ter essa cor em específico, a não ser que eu
     crie exceções */
     color: #202020;
@@ -67,11 +66,15 @@ h1{
 
     /* alinha o texto com o centro da página */
     text-align: center;
-    background-color: black;
 
     /* o pading nesse caso é da seguinte forma: 320px de margem 
     para o topo e para o bottom, e 0px de margem para a esquerda e para a direita */
+    background-color: black;
     padding: 320px 0;
+    background-image: url(../img/bgBanner.jpg);
+    background-position: center;
+    background-size: cover;
+
     /* se eu quisesse usar da forma simplificada, eu coloco cada um.
     EX: padding: 320px 120px 50px 50px (topo, bottom, left e right) */
 }
@@ -80,32 +83,6 @@ h1{
 do cabeçalho sem afetar os outros elemntos p da página */
 .topo p{
     color: aliceblue;
-}
-
-/* criando um pseudo-elemento para adicionar a imagem de fundo com filtro de opacidade */
-.topo::before{
-    /* basicamente, esse pseudo-elemento está fingindo ser o background */
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
-    /* colocando a largura da imagem como sendo a largura da página */
-    width: 100%;
-    background-image: url(../img/bgBanner.jpg);
-    background-position: center;
-    background-size: cover;
-    
-    /* adicionando o padding para que a imagem possa ficar corretamente centralizada */
-    padding: 437px 0;
-
-    /* adicionando filtros */
-    filter: opacity(0.4);
-}
-
-/* adicionando a classe topo-inside para que possamos colocar o texto em cima da imagem de background */
-.topo-inside{
-    position: relative;
 }
 
 .botaoDefault{
@@ -149,18 +126,12 @@ do cabeçalho sem afetar os outros elemntos p da página */
 
 #text1{
     position: absolute;
-    width: 700px;
-    padding: 10px 10px;
-    margin-left: 5%;
-    margin-right: 30%;
+    padding: 10px 1000px 10px 250px;
 }
 
 #text2{
     position: absolute;
-    width: 700px;
-    padding: 10px 10px;
-    margin-right: 5%;
-    margin-left: 58%;
+    padding: 10px 250px 10px 1000px;
 }
 
 
