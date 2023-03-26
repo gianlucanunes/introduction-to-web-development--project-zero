@@ -17,4 +17,4 @@ Ainda em desenvolvimento! Estou usando:
 
 High Quality Wireframe / Final objective:  
 
-![alt text for screen readers](/img/high-quality-wireframe.jpg "High Quality Wireframe").
+![alt text for screen readers](/img/high-quality-wireframe.jpg "High Quality Wireframe")
