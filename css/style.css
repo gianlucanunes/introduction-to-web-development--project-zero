@@ -30,7 +30,6 @@ html{
     /* todo o texto vai ter essa cor em específico, a não ser que eu
     crie exceções */
     color: #202020;
-    background-color: b;
 }
 
 /* com a tag a, eu tiro o padrão dela para trabalhar com os botões */
@@ -70,7 +69,7 @@ h1{
     background-color: gray;
 
     /* criando as propriedades da imagem de fundo */
-    background-image: url('../img/bgBanner.jpg');
+    background-image: url(../img/bgBanner.jpg);
     background-position: center;
     /* o cover tenta aproveitar a imagem ao máximo de acordo com o container */
     background-size: cover;
@@ -80,7 +79,6 @@ h1{
     padding: 320px 0;
     /* se eu quisesse usar da forma simplificada, eu coloco cada um.
     EX: padding: 320px 120px 50px 50px (topo, bottom, left e right) */
-
 }
 
 /* acessando o elemento p dentro da classe topo para mudar o parágrafo 
