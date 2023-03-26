@@ -12,3 +12,9 @@ Still in development! I am using:
 Ainda em desenvolvimento! Estou usando:
 - HTML
 - CSS
+
+<br><br>
+
+High Quality Wireframe / Final objective:  
+
+![alt text for screen readers](/img/high-quality-wireframe.jpg "High Quality Wireframe").
