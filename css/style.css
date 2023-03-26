@@ -1,0 +1,105 @@
+/* #region reset */
+/* o reset serve para tirar propriedades comuns dos elementos (como margens etc) */
+/* o ideal é que o reset sempre seja o primeiro no css */
+*{
+    /* tiro o padding (que é a distância interna do elemento em relação a sua borda) */
+    padding: 0;
+
+    /* tiro a margem */
+    margin: 0;
+
+    /* o box-sizing seria tipo um hitbox do elemento, onde o seu tamanho vai ser definido pela sua borda */
+    box-sizing: border-box;
+}
+/* #endregion */
+
+
+
+/* #region globais */
+/* recursos globais */
+@font-face {
+    /* coloquei também a fonte sans-serif para caso a outra fonte não carregue */
+    font-family: 'Roboto-Light', sans-serif;
+    src: url('../font/Roboto-Light.ttf');
+}
+
+/* com a tag html, eu defino a fonte de todo o site */
+html{
+    font-family: 'Roboto-Light', sans-serif;
+
+    /* todo o texto vai ter essa cor em específico, a não ser que eu
+    crie exceções */
+    color: #202020;
+    background-color: b;
+}
+
+/* com a tag a, eu tiro o padrão dela para trabalhar com os botões */
+a{
+    /* uso o text-decoration para tirar o sublinhado */
+    text-decoration: none;
+
+    /* o transition serve para trabalhar com o hoover, que é quando o botão fica
+    maior quando você está com o mouse em cima dele */
+    transition: .5s;
+}
+
+/* com a tag p, eu defino o alinhamento dos textos e o tamanho da fonte */
+p{ 
+    padding: 60px 0px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* com a tag h1, eu defino o tamanho dos títulos e dou destaque a eles */
+h1{
+    font-size: 60px;
+    font-weight: 200;
+    color: aliceblue;
+}
+/* #endregion */
+
+
+
+/* #region topo */
+.topo{
+    /* width 100% significa que é pra pegar a largura inteira da página */
+    width: 100%;
+
+    /* alinha o texto com o centro da página */
+    text-align: center;
+    background-color: gray;
+
+    /* criando as propriedades da imagem de fundo */
+    background-image: url('../img/bgBanner.jpg');
+    background-position: center;
+    /* o cover tenta aproveitar a imagem ao máximo de acordo com o container */
+    background-size: cover;
+
+    /* o pading nesse caso é da seguinte forma: 320px de margem 
+    para o topo e para o bottom, e 0px de margem para a esquerda e para a direita */
+    padding: 320px 0;
+    /* se eu quisesse usar da forma simplificada, eu coloco cada um.
+    EX: padding: 320px 120px 50px 50px (topo, bottom, left e right) */
+
+}
+
+/* acessando o elemento p dentro da classe topo para mudar o parágrafo 
+do cabeçalho sem afetar os outros elemntos p da página */
+.topo p{
+    color: aliceblue;
+}
+
+.botaoDefault{
+    width: 200px;
+    height: 50px;
+    color: rgb(94, 88, 88);
+    background-color: aliceblue;
+    border-radius: 10px;
+    border-style: double;
+    border-color: rgb(94, 88, 88);
+    padding: 20px 10px;
+    /* alguns elementos não aceitam algumas propriedades, como é o caso do a com o
+    margin. logo, eu adiciono um padding ao elemento p para que este se distancie
+    do botao. */
+}
+/* #endregion */
