@@ -60,6 +60,7 @@ h1{
 
 
 /* #region topo */
+
 .topo{
     /* width 100% significa que é pra pegar a largura inteira da página */
     width: 100%;
@@ -127,4 +128,40 @@ do cabeçalho sem afetar os outros elemntos p da página */
     do botao. */
     /* além disso, o padding serve para ser o tamanho do botão */
 }
+/* #endregion */
+
+
+
+/* #region session1 */
+
+.session1{
+    width: 100%;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+.session1 h1{
+    color: #202020;
+    font-size: 45px;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+#text1{
+    position: absolute;
+    width: 700px;
+    padding: 10px 10px;
+    margin-left: 5%;
+    margin-right: 30%;
+}
+
+#text2{
+    position: absolute;
+    width: 700px;
+    padding: 10px 10px;
+    margin-right: 5%;
+    margin-left: 58%;
+}
+
+
 /* #endregion */
